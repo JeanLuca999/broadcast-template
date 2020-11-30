@@ -111,6 +111,7 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 20px;
 }
 
 .first-section__wrapper__title {
@@ -140,4 +141,72 @@ h1 {
     width: 100%;
     height: 80%;
     object-fit: cover;
+}
+
+.second-section {
+    background-color: #041625;
+    min-height: 100vh;
+}
+
+.second-section__wrapper {
+    padding: 0 20px;
+}
+
+.second-section__wrapper__title {
+    font-size: 2.5rem;
+    text-align: left;
+    color: white;
+    padding-top: 20px;
+}
+
+.second-section__wrapper__paragraph {
+    font-size: 1.8rem;
+    text-align: left;
+    padding: 0;
+}
+
+.second-section__wrapper__content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.second-section__wrapper__content__buttons-container {
+    margin-top: 25px;
+}
+
+.second-section__wrapper__content__buttons-container button {
+    box-sizing: border-box;
+    padding-left: 15px;
+    display: block;
+    font-size: 1.5rem;
+    text-align: left;
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    color: rgba(255, 255, 255, 0.726);
+    background-color: rgb(31, 44, 52);
+    border: none;
+    border-radius: 5px;
+}
+
+.second-section__wrapper__content__buttons-container button:first-child {
+    background-color: #AA14CC;
+}
+
+.second-section__wrapper__content__images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.second-section__wrapper__content__images img {
+    max-width: 500px;
+    max-height: 300px;
+    width: 90%;
+    object-fit: cover;
+    margin: 15px;
 }
