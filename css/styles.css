@@ -97,7 +97,7 @@ h1 {
     transition: 0.4s ease;
 }
 
-.main-button:hover {
+.main-button:hover, .main-button:active {
     background-color: rgba(255, 255, 255, 0.158);
 }
 
