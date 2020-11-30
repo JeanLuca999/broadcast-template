@@ -49,7 +49,7 @@ main {
 }
 
 .background {
-    background-color: rgba(0, 0, 0, 0.397);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .main-container {
@@ -135,12 +135,14 @@ h1 {
     flex-direction: column;
     align-content: center;
     justify-content: space-between;
-    max-width: 300px;
+    max-width: 500px;
+    height: 300px;
+    margin: 5px;
     background-color:  rgb(33, 52, 61);
 }
 
 .videos-container__card p {
-    padding-bottom: 15%;
+   padding-bottom: 50px;
 }
 
 .videos-container__card img {
@@ -237,8 +239,8 @@ h1 {
 }
 
 .third-section__wrapper__images .videos-container__card {
-    margin-top: 0;
-    margin-bottom: 15px;
+    margin: 0 auto;
+    margin-bottom: 10px;
 }
 
 .third-section__wrapper__title {
@@ -267,6 +269,7 @@ footer {
 }
 
 .footer__wrapper__lists ul {
+    margin: 0 10px;
     margin-top: 25px;
 }
 
@@ -289,29 +292,31 @@ footer {
 }
 
 @media(min-width:700px) {
-    .videos-container {
-        flex-direction: row;
-        margin-top: 60px;
+    html {
+        font-size: 12px;
     }
-    .videos-container__card {
-        max-width: 500px;
-        height: 500px;
-        margin: 5px;
+
+    .videos-container {
+        margin-top: 60px;
+        flex-direction: row;
     }
     .second-section__wrapper__content__images {
       flex-direction: row;
       flex-wrap: wrap;
       align-content: center;
       justify-content: center;
-      max-width: 700px;
       margin: 0 auto;
     }
     .second-section__wrapper__content__images img {
-        max-width: 340px;
+        max-width: 300px;
     }
     .third-section__wrapper__images {
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-around;
+    }
+    .third-section__wrapper__images .videos-container__card {
+        max-width: 500px;
+        margin: 0 10px;
     }
     .footer__wrapper {
         max-width: 70vw;
@@ -324,8 +329,11 @@ footer {
 }
 
 @media(min-width:900px) {
+    html {
+        font-size: 14px;
+    }
     .second-section__wrapper__content__images {
-        max-width: 800px;
+        max-width: 1200px;
     }
     .second-section__wrapper__content__images img {
         max-width: 380px;
