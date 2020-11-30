@@ -23,8 +23,55 @@ header {
     padding: 10px 10px;
 }
 
+header ul {
+    position: absolute;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    background-color: #041625;
+    height: 100vh;
+}
+
+header ul li {
+    list-style-type: none;
+    border-bottom: 0.8px solid rgba(255, 255, 255, 0.479);
+    margin-left: 10px;
+    padding: 10px 0;
+}
+
+header ul li:first-child {
+    margin-top: 50px;
+}
+
+header ul li:last-child {
+    border: none;
+}
+
+header ul li a {
+    font-size: 1.4rem;
+    display: block;
+    color: rgba(255, 255, 255, 0.74);
+    text-decoration: none;
+    padding: 10px 0;
+}
+
+.menu-active {
+    right: 0%;
+}
+
+#menu-itens {
+    transition: 0.4s ease-in-out;
+}
+
 .menu {
     margin-left: auto;
+    position: relative;
+    z-index: 999;
+    color:#c0c5c9;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: right;
+    user-select: none;
 }
 
 .menu-barra {
@@ -33,10 +80,6 @@ header {
     margin-top: 3px;
     background-color: #c0c5c9;
     border-radius: 5px;
-}
-
-.menu-barra:first-child {
-
 }
 
 .menu-text {
