@@ -193,8 +193,11 @@ h1 {
     background-color:  rgb(33, 52, 61);
 }
 
+
+
 .videos-container__card p {
- font-size: 1.2rem;
+    font-size: 1.2rem;
+    padding-top: 15px;
 }
 
 .videos-container__card img {
