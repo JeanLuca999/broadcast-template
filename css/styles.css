@@ -103,7 +103,7 @@ h1 {
 
 .first-section {
     background-color: #062038;
-    min-height: 100vh;
+    padding-bottom: 30px;
 }
 
 .first-section__wrapper {
@@ -131,14 +131,16 @@ h1 {
 }
 
 .videos-container__card {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
     max-width: 300px;
-    height: 300px;
-    margin: 20px auto;
     background-color:  rgb(33, 52, 61);
 }
 
 .videos-container__card p {
-    padding-top: 15px;
+    padding-bottom: 15%;
 }
 
 .videos-container__card img {
@@ -149,7 +151,7 @@ h1 {
 
 .second-section {
     background-color: #041625;
-    min-height: 100vh;
+    padding-bottom: 30px;
 }
 
 .second-section__wrapper {
@@ -208,25 +210,30 @@ h1 {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
     text-align: center;
+    padding-top: 10px;
 }
 
 .second-section__wrapper__content__images img {
-    max-width: 500px;
-    max-height: 300px;
+    max-width: 400px;
+    max-height: 200px;
     width: 90%;
     object-fit: cover;
-    margin: 15px;
+    margin: 5px 5px;
 }
 
 .third-section {
     background-color: rgb(10, 18, 22);
-    min-height: 100vh;
+    padding-bottom: 30px;
 }
 
 .third-section__wrapper {
     padding: 20px;
+}
+
+.third-section__wrapper__images {
+    display: flex;
+    flex-direction: column;
 }
 
 .third-section__wrapper__images .videos-container__card {
@@ -279,4 +286,48 @@ footer {
     font-weight: 400;
     padding: 10px 0;
     color: rgba(255, 255, 255, 0.651);
+}
+
+@media(min-width:700px) {
+    .videos-container {
+        flex-direction: row;
+        margin-top: 60px;
+    }
+    .videos-container__card {
+        max-width: 500px;
+        height: 500px;
+        margin: 5px;
+    }
+    .second-section__wrapper__content__images {
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .second-section__wrapper__content__images img {
+        max-width: 340px;
+    }
+    .third-section__wrapper__images {
+        flex-direction: row;
+        justify-content: center;
+    }
+    .footer__wrapper {
+        max-width: 70vw;
+        margin: 0 auto;
+    }
+    .footer__wrapper__lists {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+@media(min-width:900px) {
+    .second-section__wrapper__content__images {
+        max-width: 800px;
+    }
+    .second-section__wrapper__content__images img {
+        max-width: 380px;
+    }
 }
